@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>회원가입 + To Do List</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 회원가입 영역 -->
+  <div id="signup-section">
+    <h2>회원가입</h2>
+    <input type="text" id="signup-id" placeholder="아이디 입력" />
+    <button onclick="checkDuplicateId()">중복확인</button>
+    <br /><br />
+    <input type="password" id="signup-pw" placeholder="비밀번호 입력" />
+    <button onclick="checkPasswordRule()">비밀번호 검사</button>
+    <button onclick="registerUser()">회원가입</button>
+  </div>
+
+
+  <!-- To Do List 영역 -->
+  <div id="todo-section" style="display: none;">
+    <h2>To Do List</h2>
+    <input type="text" id="todo-input" placeholder="할 일을 입력하세요" />
+    <button onclick="addTodo()">추가</button>
+    <button onclick="logout()">로그아웃</button>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
